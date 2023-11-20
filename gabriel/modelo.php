@@ -18,7 +18,7 @@
     function somar(){
         let num1 = document.getElementById('num1').value;
         let num1 = document.getElementById('num2').value;
-        window.open(`calculo.php?numero1=${num1}&numero2=${num2}`)
+        window.open(`./calculo.php?numero1=${num1}&numero2=${num2}`);
         alert(num1)
     }
 </script>
