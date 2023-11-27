@@ -74,3 +74,13 @@ A mensagem "Aprovado com Distinção", se a média for igual a dez. (switch case
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
+27-11-2023
+
+1 - Crie um algoritmo que solicite um número, e faça o cálculo fatorial do mesmo, exiba o resultado na tela. (Utilizando decremento)
+OBS: Fatorial é a multiplicação do número por seus antecessores   maiores ou iguais a 1 (Ex: fatorial de 5 = 5x4x3x2x1 => 120)
+
+2 - Desafio
+Desenvolva um script com front e back end, onde o usuário escolhe um número (do 1 ao 10) e na tela apareça a tabuada calculada escolhida. Detalhe: o campo de escolha deve ser do tipo “select” e as opções dos números devem ser dinâmicas através de um “for” dentro do select. Ou seja nesse exercício, deve-se misturar o PHP com o HTML, tomem cuidado e lembrem-se das aberturas das Tags necessárias.
+
+--------------------------------------------------------------------------
+
