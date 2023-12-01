@@ -83,4 +83,19 @@ OBS: Fatorial é a multiplicação do número por seus antecessores   maiores ou
 Desenvolva um script com front e back end, onde o usuário escolhe um número (do 1 ao 10) e na tela apareça a tabuada calculada escolhida. Detalhe: o campo de escolha deve ser do tipo “select” e as opções dos números devem ser dinâmicas através de um “for” dentro do select. Ou seja nesse exercício, deve-se misturar o PHP com o HTML, tomem cuidado e lembrem-se das aberturas das Tags necessárias.
 
 --------------------------------------------------------------------------
+01-12-2023
 
+1 - Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos através de uma função. Seu script também deve fornecer a média dos três números, através de uma segunda função que chama a primeira. Obs. faça uma validação para não deixar o usuário enviar inputs vazios.
+
+2 - Escreva um script que pergunta ao usuário se ele deseja converter uma temperatura de grau Celsius para Farenheit ou vice-versa. Se ele digitar/escolher 1, é de Celsius para Farenheit, se digitar/escolher 2 é de Farenheit para Celsius, outro valor mostre uma mensagem de erro. Para cada conversão, chame a função correta.
+
+3 - Crie uma função que receba dois valores inteiros como argumentos e retorne se os números são divisíveis, se forem divisíveis verifique se cada número digitado é par ou ímpar e mostre na tela também.
+
+
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
