@@ -29,6 +29,6 @@ if (!empty($_GET["numero1"]) && !empty($_GET["numero2"]) && !empty($_GET["numero
 } else {
   echo "Faltou algum valor";
 }
-
+// Mostrar
 echo "A soma dos 3 valores é :  ", $somaResult;
 echo " <br> A media dos 3 valores é : ", $mediaResult;
