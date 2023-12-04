@@ -12,9 +12,9 @@
 
   <h2>Escolha um número para ver a tabuada:</h2>
 
-  <form action="php_desafio.php" method="get">
-    <label for="numero">Número:</label>
-    <select name="numero" id="numero">
+  <form>
+    <label for="num">Número:</label>
+    <select name="num1" id="numero">
       <?php
       // Gerar as opções do select de 1 a 10
       for ($i = 1; $i <= 10; $i++) {
@@ -22,8 +22,16 @@
       }
       ?>
     </select>
-    <button type="submit">Mostrar Tabuada</button>
+    <button onclick="verificacao()" id="btn-media">Mostrar Tabuada</button>
   </form>
+
+  <script>
+    function verificacao() {
+      let num1 = document.getElementById('numero').value;
+      alert(num1);
+      window.open(`php_desafio.php?numero1=${num1}`)
+    }
+  </script>
 
 </body>
 
