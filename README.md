@@ -91,6 +91,8 @@ Desenvolva um script com front e back end, onde o usuário escolhe um número (d
 
 3 - Crie uma função que receba dois valores inteiros como argumentos e retorne se os números são divisíveis, se forem divisíveis verifique se cada número digitado é par ou ímpar e mostre na tela também.
 
+4 - Crie uma função que receba três inteiros como argumentos (ano, mês, dia) e verifique se se trata de um data válida. O ano deverá estar entre 1900 e o presente ano. Deverá retornar um valor booleano.
+
 
 --------------------------------------------------------------------------
 
