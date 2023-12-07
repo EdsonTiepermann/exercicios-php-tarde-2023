@@ -186,6 +186,11 @@ Desenvolva um script com front e back end, onde o usuário escolhe um número (d
 
 4 - Crie uma função que receba três inteiros como argumentos (ano, mês, dia) e verifique se se trata de um data válida. O ano deverá estar entre 1900 e o presente ano. Deverá retornar um valor booleano.
 
+5 - Crie duas funções que irão calcular o IMC de uma pessoa (os dados serão passados pelo front-end), uma função deverá calcular o IMC e a segunda deverá dizer qual grau a pessoa se encontra (magro, normal, obeso…), retorne o grau para o usuário.
+
+![image](https://github.com/EdsonTiepermann/exercicios-php-tarde-2023/assets/33090891/b91bb4e5-7f97-4f0a-9990-e1b7b56a4e32)
+
+
 
 --------------------------------------------------------------------------
 
