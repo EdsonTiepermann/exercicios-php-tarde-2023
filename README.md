@@ -87,6 +87,99 @@ Desenvolva um script com front e back end, onde o usuário escolhe um número (d
 
 1 - Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos através de uma função. Seu script também deve fornecer a média dos três números, através de uma segunda função que chama a primeira. Obs. faça uma validação para não deixar o usuário enviar inputs vazios.
 
+    Resolução
+
+    arquivo1.php
+
+            <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        
+        <body>
+            <form action="">
+                <input type="number" id="valor1" placeholder="Digite o primeiro valor">
+                <input type="text" id="valor2" placeholder="Digite o segundo valor">
+                <input type="text" id="valor3" placeholder="Digite o terceiro valor">
+                <button onclick="evtEnviarNumeros()">Verificar</button>
+            </form>
+        </body>
+        <script>
+            function evtEnviarNumeros() {
+                let valor1 = document.querySelector('#valor1').value;
+                let valor2 = document.querySelector('#valor2').value;
+                let valor3 = document.querySelector('#valor3').value;
+        
+                let valida = validarCampos(valor1, valor2, valor3);
+        
+        
+                if (valida == true) {
+                    window.open('desafioBack.php?valor1=' + valor1 + '&valor2=' + valor2 + '&valor3=' + valor3);
+                }
+            }
+        
+            function validarCampos(valor1, valor2, valor3) {
+        
+                if (valor1 == '') {
+                    alert('Preencha todos os campos');
+                    document.querySelector('#valor1').focus();
+                    return false;
+                } else if (valor2 == '') {
+                    alert('Preencha todos os campos');
+                    document.querySelector('#valor2').focus();
+                    return false;
+                } else if (valor3 == '') {
+                    alert('Preencha todos os campos');
+                    document.querySelector('#valor3').focus();
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+        </html>
+-------------------------------------------------
+        arquivo2.php
+
+            <?php 
+            
+            $num1 = $_GET['valor1'];
+            $num2 = $_GET['valor2'];
+            $num3 = $_GET['valor3'];
+            
+            function resultadoFinal($num1, $num2, $num3)
+            {
+                $media = soma($num1, $num2, $num3) / 3;
+            
+                $result = [
+                    'media' => $media,
+                    'soma' => soma($num1, $num2, $num3)
+                ];
+            
+                return $result;
+            }
+            
+            
+            function soma($num1, $num2, $num3){
+                $soma = $num1 + $num2 + $num3;
+                return $soma;
+            }
+            
+            
+            $resultado = resultadoFinal($num1, $num2, $num3);
+            // $resultado = "qualquer coisa";
+            
+            var_dump($resultado);
+            // print_r($resultado);
+            
+            echo "<br> A soma eh ".$resultado['soma']." e da média eh: ".$resultado['media'];
+            
+            ?>
+
 2 - Escreva um script que pergunta ao usuário se ele deseja converter uma temperatura de grau Celsius para Farenheit ou vice-versa. Se ele digitar/escolher 1, é de Celsius para Farenheit, se digitar/escolher 2 é de Farenheit para Celsius, outro valor mostre uma mensagem de erro. Para cada conversão, chame a função correta.
 
 3 - Crie uma função que receba dois valores inteiros como argumentos e retorne se os números são divisíveis, se forem divisíveis verifique se cada número digitado é par ou ímpar e mostre na tela também.
