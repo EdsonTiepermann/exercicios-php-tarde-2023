@@ -22,7 +22,7 @@ if ($opcao == 2) {
   }
 
   $celsius =  fahrenheitParaCelsius($temperatura);
-
+  // Mostrar
 
   echo "A temperatura em Celsius é : ", $celsius;
 }
