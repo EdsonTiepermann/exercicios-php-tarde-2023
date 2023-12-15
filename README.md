@@ -193,7 +193,14 @@ Desenvolva um script com front e back end, onde o usuário escolhe um número (d
 
 
 --------------------------------------------------------------------------
+15-12-2023
 
+1 - Crie um script para inserir o seu nome completo, e um campo de opções para escolher letras maiúsculas ou minúsculas, em seguida crie uma função para deixar todo o seu nome em maiúsculo e uma para deixar todo o seu nome em minúsculo, e utilize a função e transforme seu nome de acordo com a escolha em tela realizada.
+
+2 - Insira seu nome na tela, e crie um script com função para retornar um array onde cada posição do array contenha uma parte do seu nome.
+
+
+--------------------------------------------------------------------------
 
 --------------------------------------------------------------------------
 
