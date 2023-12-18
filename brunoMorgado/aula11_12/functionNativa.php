@@ -193,4 +193,150 @@ $filtrados = array_filter($numArray, fn ($item) => $item < 86);
 
 print_r($filtrados);
 //-----------------------------------------------------------------------------------------------------------------------
-//teste
+echo "<br><br> alteração de array  <br>";
+// não serve oara realizar filtros
+
+$numArray = [1, 112, 25, 36, 85];
+
+$resultado2 = array_map(function ($item) {
+  return $item * 2;
+}, $numArray);
+
+print_r($resultado2);
+
+//-----------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Destruindo um array e montando uma string  <br>";
+
+$arrayNomeCompleto = ["Bruno", "Alexandre", "Morgado"];
+
+print_r($arrayNomeCompleto);
+
+$string = implode("", $arrayNomeCompleto);
+
+echo "<br><br> String Montada: $string";
+//------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Removendo o ultimo intem do array  <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+array_pop($numArray);
+
+print_r($numArray);
+
+//-------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Removendo o primeiro item do array  <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+array_shift($numArray);
+
+print_r($numArray);
+
+//--------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Buscar algo no array  <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+if (in_array(111, $numArray)) {
+  echo "Tem";
+} else {
+  echo "Não tem";
+}
+//--------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Buscar algo no array se tiver retorna a posição  <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+$pos = array_search(36, $numArray);
+
+echo $pos;
+
+//---------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Ordenação em ordem crescente  <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+sort($numArray);
+
+print_r($numArray);
+
+//------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Ordenação em ordem descrescente  <br>";
+
+$numArray3 = [1, 112, 90, 25, 36, 85];
+
+asort($numArray3);
+
+print_r($numArray3);
+
+//-------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Ordenação em ordem descrescente  mantendo a chave <br>";
+
+$numArray3 = [1, 112, 90, 25, 36, 85];
+
+arsort($numArray3);
+
+print_r($numArray3);
+//---------------------------------------------------------------------------------------------------------------------------------
+echo '<br> Array Map <br>';
+
+function functionArrayMap($item)
+{
+  if ($item === "Edson") {
+    return "{$item} - Professor da tarde. É o Edson";
+  } elseif ($item === "Robinson") {
+    return "{$item} - Professor da noite. Quebrou a caneca";
+  } elseif ($item === "Felipe") {
+    return "{$item} - Aluno da noite.";
+  } elseif ($item === "Leonardo") {
+    return "{$item} - Aluno da tarde, infiltrado na noite";
+  }
+}
+
+$arrayParaMapear = array("Edson", "Robinson", "Felipe", "Leonardo");
+echo "<pre>";
+print_r(array_map("functionArrayMap", $arrayParaMapear));
+echo "</pre>";
+
+//----------------------------------------------------------------------------------------------------------------------------------
+
+// echo "<br><br> Datas 01-01-1970";
+// no geral se trabalha com milesegundos 01011970 (começam a contar em 1970)
+
+date_default_timezone_set('America/Sao_Paulo');
+
+echo '<br>';
+echo time();
+echo "<br>" . date('Y-m-d', time());
+echo '<br>';
+
+echo date('d-m-y H:i:s');
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+echo "<br><br> Manipulando data, formato internacional";
+echo "<br>";
+$data = '2023-03-13';
+
+echo "$data data de inicio do curso";
+echo '<br>';
+
+$milesegundos = strtotime($data);
+echo $milesegundos;
+echo '<br>';
+echo date('d-m-y', $milesegundos);
+
+echo '<br>';
+echo '<br>';
+//--------------------------------------------------------------------------------------------------------------------------------
+echo "<br><br> Diferenca entre datas";
+echo '<br>';
+
+$dataHoje = time();
+
+$difDatas = ($milesegundos - $dataHoje);
+
+echo $dias = $difDatas;
+
+echo "<br>" . $diasData = abs(floor($difDatas / (60 * 60 * 24)));
+//---------------------------------------------------------------------------------------------------------------------------------
