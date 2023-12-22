@@ -210,6 +210,11 @@ Array[2, 90, 5, 32, 45, 1, 73]
 Array1[2, 90, 100, 1, 4, 7]
 Array2[3, 7, 13, 87, 1, 2, 69]
 
+7 - Faça um código onde irá gerar 5 números aleatórios. Com esses números gerados, monte um array e caso a primeira posição seja menor que 5, remova o primeiro valor.
+
+8 - Crie uma função que receba um array de 5 números inteiros, os valores serão passados pelo usuário, e retorne a soma de todos os elementos desse array.
+
+
 
 
 
