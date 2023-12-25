@@ -22,7 +22,7 @@
         var nota = document.getElementById('nota').value;
         var nota2 = document.getElementById('nota2').value;
 
-        window.open(`recebeEX.php?nota1=${nota}&nota2=${nota2}`)
+        window.open(`recebenota.php?nota1=${nota}&nota2=${nota2}`)
         
     
         }
