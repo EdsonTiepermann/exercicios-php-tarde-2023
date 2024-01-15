@@ -213,7 +213,15 @@ Array2[3, 7, 13, 87, 1, 2, 69]
 7 - Faça um código onde irá gerar 5 números aleatórios. Com esses números gerados, monte um array e caso a primeira posição seja menor que 5, remova o primeiro valor.
 
 8 - Crie uma função que receba um array de 5 números inteiros, os valores serão passados pelo usuário, e retorne a soma de todos os elementos desse array.
+--------------------------------------------------------------------------
 
+15-01-2024
+
+1- Crie um cabeçalho em um arquivo a parte, contendo um layout simples, com um breve menu chamando 2 arquivos páginas.
+	Crie também um rodapé com um layout simples, contendo algumas informações fictícias.
+	Crie também 2 páginas contendo em cada uma um exercício qualquer já resolvido. Um exercício em cada arquivo.
+	As funções em PHP devem estar em uma única classe.
+	E façam todos os arquivos funcionarem utilizando o que foi passado em sala hoje.
 
 
 
